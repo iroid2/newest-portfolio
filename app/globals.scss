@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './styles/variables';
 
 $primContainerBgColor:#0A0F16;
 $primBodyBgColor:#101823;
@@ -49,15 +50,52 @@ body{
         border-radius: 20px;
         height: 20%;
         padding: .1rem 1rem;
+        @media(max-width: 768px){
+          padding: 0;
+        }
+        .left-topside{
+          // background-color: red;
+          .profile{
+            // background-color: rgb(103, 128, 103);
+            img{
+              border-radius: 2rem;
+            }
+            .profile-details{
+              
+              .name{
+                font-size: .6rem;
+              }
+              .role{
+                font-size: .5rem;
+              }
+            }
+          }
+        }
+        .right-topside{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
       .bottmSideBar{
-        padding: .1rem 1rem;
+        padding: 01rem;
         border-radius: 20px;
         width: 100%;
         background-color:$primContainerBgColor;
         color: white;
-
         height: 90%;
+        text-align: center;
+        @media(max-width: 768px){
+          flex-direction: row;
+          overflow: auto;
+        }
+        .menu-detail {
+          @media(max-width: 768px){
+          padding: .2rem;
+          text-align: center;
+          font-size: .8rem;
+          }
+        }
       }
     }
     .profileSectn{
@@ -134,6 +172,7 @@ body{
       padding: 1rem;
       width: 49%;
       background-color: rosybrown;
+      overflow: auto;
       @media(max-width: 768px){
         width: 100%;
         height: 200px;

@@ -8,7 +8,7 @@ export default function Profiletab() {
       <div className="banner">
         <Image src={'/images/banner.jpg'} className='bannImg' width={200} height={200}/>
       </div>
-      <div className="profile-details  ">
+      <div className="profile-details">
         <Image src={'/images/avatar2-5.png'} alt='' height={150} width={140}/>
         <div className="full-details" >
         <h1 className="name">WESLEY AARONS</h1>
