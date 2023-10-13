@@ -22,6 +22,10 @@ export default function Profiletab() {
           <BsLinkedin/>
           <BsDiscord/>
         </div>
+        <div className="follows ">
+          <h2 className='followBtn' >Follow Twitch </h2>
+          <h2 className='contactBtn'>CONTACT ME </h2>
+      </div>
       </div>
      
     </div>
