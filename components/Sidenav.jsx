@@ -4,6 +4,8 @@ import {HiMenuAlt1} from 'react-icons/hi'
 import {FiSun} from 'react-icons/fi'
 import {BiSolidUserBadge} from 'react-icons/bi'
 import {BsTicketDetailed} from 'react-icons/bs'
+import {LuView} from 'react-icons/lu'
+import {TbListDetails} from 'react-icons/tb'
 
 export default function Sidenav() {
   return (
@@ -37,12 +39,12 @@ export default function Sidenav() {
             <p>Resume</p>
           </div>
           <div className="menu-detail">
-            <BiSolidUserBadge className='text-3xl align-center'/>
-            <p>About</p>
+            <LuView className='text-3xl align-center'/>
+            <p>Video</p>
           </div>
           <div className="menu-detail">
-            <BiSolidUserBadge className='text-3xl align-center'/>
-            <p>About</p>
+            <TbListDetails className='text-3xl align-center'/>
+            <p>Blog</p>
           </div>
           <div className="menu-detail">
             <BiSolidUserBadge className='text-3xl align-center'/>
