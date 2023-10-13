@@ -3,6 +3,7 @@ import React from 'react'
 import {HiMenuAlt1} from 'react-icons/hi'
 import {FiSun} from 'react-icons/fi'
 import {BiSolidUserBadge} from 'react-icons/bi'
+import {BsTicketDetailed} from 'react-icons/bs'
 
 export default function Sidenav() {
   return (
@@ -22,7 +23,7 @@ export default function Sidenav() {
           </div>
           </div>
           <div className="right-topside md:flex-col sm:flex-row  gap-3">
-            <HiMenuAlt1 className='text-2xl mb-3'/>
+            <HiMenuAlt1 className='text-2xl bg-red'/>
             <FiSun className='text-2xl'/>
           </div>
         </div>
@@ -32,8 +33,8 @@ export default function Sidenav() {
             <p className='text-sm text-center'>About</p>
           </div>
           <div className="menu-detail">
-            <BiSolidUserBadge className='text-3xl item-center'/>
-            <p>About</p>
+            <BsTicketDetailed className='text-3xl item-center'/>
+            <p>Resume</p>
           </div>
           <div className="menu-detail">
             <BiSolidUserBadge className='text-3xl align-center'/>

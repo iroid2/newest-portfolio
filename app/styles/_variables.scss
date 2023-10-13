@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+$primContainerBgColor:#0A0F16;
+$primBodyBgColor:#101823;
+$primfontFam:'Overpass', sans-serif;
 .scrollable {
     overflow: auto;
     height: 200px;
     width: 300px;
+    background-color: green;
+  }
+
+  .sectionTitle{
+    font-size: 20px;
+    font-family: $primfontFam;
+    
+    font-weight: 600;
+    line-height: 21px;
+    padding: 1rem;
+    color: rgb(255, 255, 255,0.85);
+  }
+  .sectionDesc{
+    color: rgb(255, 255, 255,0.55);
+    font-size: 16px;
   }
