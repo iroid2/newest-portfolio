@@ -3,6 +3,8 @@ import React from 'react'
 import Sectiontitle from './Sectiontitle'
 import Sectiondescription from './Sectiondescription'
 import { BsTwitch,BsRocketTakeoff } from 'react-icons/bs'
+import { MdAlbum } from 'react-icons/md'
+import { BiSolidQuoteRight,BiSolidQuoteLeft} from 'react-icons/bi'
 import { FiChevronRight } from 'react-icons/fi'
 import Image from 'next/image'
 export default function ContentSection({title}) {
@@ -14,7 +16,7 @@ export default function ContentSection({title}) {
        <Sectiondescription desc={'I am a web Developer, i love take advantage of recent technogies in the field of web development to come up with complex and attractive web apps.'}/>
       </div>
       <div className="services ">
-        <Sectiontitle className='px-4 bg-red-500 ' title={'Services'}/>
+      <h1 className='content-title p-4'><Sectiontitle title={'Services'} /></h1>
         <div className="servicesCards grid grid-cols-2">
           <div className="servicesCard ">
             <BsTwitch className='text-6xl bg-teal-900 rounded-full p-3'/>
@@ -39,7 +41,7 @@ export default function ContentSection({title}) {
         </div>
       </div>
       <div className="pricing ">
-        <Sectiontitle className='px-4 bg-red-400' title={'Pricing'}/>
+      <h1 className='content-title p-4'><Sectiontitle title={'Pricing'} /></h1>
         <div className="pricingCards flex">
           <div className="pricing-card flex flex-col items-center ">
             <BsRocketTakeoff className='text-5xl  text-purple-800 p-2 bg-zinc-200 rounded-full 
@@ -72,7 +74,7 @@ border-1-purple-500'/>
         </div>
       </div>
       <div className="clients-sectn ">
-        <Sectiontitle  title={'Clients'} />
+      <h1 className='content-title p-4'><Sectiontitle title={'Clients'} /></h1>
         <div className="clients-cards ">
         <div className="client">
           <Image src={'/images/goog.png'} alt='' height={100} width={100}/>
@@ -87,7 +89,60 @@ border-1-purple-500'/>
           <Image src={'/images/goog.png'} alt='' height={100} width={100}/>
         </div>
         </div>
-       
+      </div>
+      <div className="testimony">
+      <h1 className='content-title p-4'><Sectiontitle title={'Testimony'} /></h1>
+        <div className="testim-slider">
+          <p className="client-feedback flex text-center">
+            <BiSolidQuoteLeft/> Lorem ipsum dolor, Lorem ipsum dolor sit. sit amet consectetur Lorem, ipsum dolor. adipisicing elit.<br></br> <BiSolidQuoteRight/>
+          </p>
+          <Image src={'/images/client.png'} alt='' height={100} width={100}/>
+        </div>
+      </div>
+      <div className="fun-facts ">
+      <h1 className='content-title p-4'><Sectiontitle title={'Testimony'} /></h1>
+      <div className="fact-details">
+        <div className="factCard border-none flex flex-col items-center">
+          <MdAlbum className='icon text-white text-2x1'/>
+          <p>80+
+Albumes Listened</p>
+        </div>
+        <div className="factCard flex flex-col items-center">
+          <MdAlbum className='icon text-white text-2x1'/>
+          <p>15+
+Awards Won</p>
+        </div>
+        <div className="factCard flex flex-col items-center">
+          <MdAlbum className='icon text-white text-2x1'/>
+          <p>80+
+Albumes Listened</p>
+        </div>
+        <div className="factCard flex flex-col items-center">
+          <MdAlbum className='icon text-white text-2x1'/>
+          <p>80+
+Albumes Listened</p>
+        </div>
+      </div>
+      </div>
+      <div className="resume">
+        <div className="resum-details">
+        <h1 className='content-title'><Sectiontitle title={'Resume'} /></h1>
+        <div className="resumCards">
+        <div className="resum-card ">
+          <div className="card-title-details flex">
+          <MdAlbum className='icon text-white text-2x1'/>
+          <h1 className='content-title'><Sectiontitle title={'EXPERIENCE'} /></h1>
+          </div>
+        </div>
+        <div className="resum-card ">
+          <div className="card-title-details flex">
+          <MdAlbum className='icon text-white text-2x1'/>
+          <h1 className='content-title'><Sectiontitle title={'EDUCATION'} /></h1>
+          </div>
+        </div>
+        </div>
+        </div>
+        <div className="skills-details"></div>
       </div>
     </div>
   )

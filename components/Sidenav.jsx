@@ -50,10 +50,7 @@ export default function Sidenav() {
             <BiSolidUserBadge className='text-3xl align-center'/>
             <p>About</p>
           </div>
-          <div className="menu-detail">
-            <BiSolidUserBadge className='text-3xl align-center'/>
-            <p>About</p>
-          </div>
+         
         </div>
         </div>
   )

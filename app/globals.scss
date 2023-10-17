@@ -6,11 +6,12 @@
 
 
 @import './styles/variables';
+@import './styles/resume';
 
 $primContainerBgColor:#0A0F16;
 $primBodyBgColor:#101823;
 $primfontFam:'Overpass', sans-serif;
-
+$primPurp: #A33DA5;
 
 body{
   background-color: $primBodyBgColor;
@@ -35,7 +36,7 @@ body{
       width: 7%;
       display: flex;
       flex-direction: column;
-      height: 97%;
+      height: 94%;
       gap: .7rem;
       @media(max-width: 768px){
         flex-direction: column;
@@ -46,6 +47,7 @@ body{
         top: 0;
         gap: 1rem;
         position: fixed;;
+        left: 1rem;
       }
       .topSideBar{
           padding: 01rem;
@@ -62,6 +64,7 @@ body{
         @media(max-width: 768px){
           flex-direction: row;
           justify-content: space-between;
+          padding: 2rem;
         }
         .left-topside{
           // background-color: red;
@@ -89,12 +92,13 @@ body{
         }
       }
       .bottmSideBar{
-        padding: 03rem 1rem;
+        // padding:  1rem;
         border-radius: 20px;
         width: 100%;
         background-color:$primContainerBgColor;
         color: white;
         height: 90%;
+        gap:1.2rem;
         // background-color: red;
         display: flex;
         flex-direction: column;
@@ -109,7 +113,7 @@ body{
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding: .5rem .6rem ;
+          padding: .2rem .6rem ;
           border-bottom: .5px solid rgba(174, 173, 173, 0.57);
           @media(max-width: 768px){
           padding: .2rem;
@@ -289,8 +293,13 @@ body{
         flex-wrap: wrap;
         .content-title{
           padding: 1rem 1.6rem;
-          background-color: firebrick;
+         
           border-bottom: .5px solid rgba(57, 55, 55, 0.338);
+          .sectionTitle{
+            @media(max-width: 768px){
+              font-size: 1rem;
+            }
+          }
         }
           .servicesCards{
             margin-top: 1rem;
@@ -368,7 +377,77 @@ body{
             width: 25%;
             @media(max-width: 768px){
               width: 100%;
-
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+      .testimony{
+        color: rgba(160, 155, 155, 0.586);
+        padding: 1rem;
+        .testim-slider{
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          .client-feedback{
+            padding: 2rem;
+            font-family: $primfontFam;
+          }
+          img{
+            border-radius: 3rem;
+          }
+        }
+      }
+      .fun-facts{
+        .fact-details{
+          display: flex;
+          @media(max-width: 768px){
+            flex-direction: column;
+          }
+         .factCard{
+          border-top: .5px solid rgba(255, 255, 255, 0.396);
+          border-left: .5px solid rgba(255, 255, 255, 0.396);
+          padding: 1rem;
+          text-align: center;
+          color: white;
+          @media(max-width: 768px){
+            border: none;
+            border-left: none;
+            border-bottom: .5px solid rgba(255, 255, 255, 0.396);
+            width: 100%;
+          }
+          
+          .icon{
+            font-size: 4rem;
+            color: #A33DA5;
+          }
+         } 
+        }
+      }
+    }
+    .resume{
+      width: 100%;
+      .resumCards{
+        display: flex;
+        width: 100%;
+        @media(max-width: 768px){
+          flex-direction: column;
+        }
+        .resum-card{
+          width: 50%;
+          border-top: .5px solid rgba(128, 128, 128, 0.311);
+          border-right: .5px solid rgba(128, 128, 128, 0.311);
+          @media(max-width: 768px){
+            width: 100%;
+          }
+          .card-title-details {
+            padding: 1rem;
+            .icon{
+              font-size: 4rem;
+              color:$primPurp;
             }
           }
         }
