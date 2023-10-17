@@ -9,9 +9,12 @@ export default function Profiletab() {
         <Image src={'/images/banner.jpg'} className='bannImg' width={200} height={200}/>
       </div>
       <div className="profile-details">
+        <div className="prof-top">
         <Image src={'/images/avatar2-5.png'} alt='' height={150} width={140}/>
+        <div className="bg-rect"></div>
+        </div>
         <div className="full-details" >
-        <h1 className="name">WESLEY AARONS</h1>
+        <h1 className="name text-center">iroid</h1>
           <p className="job">Web developer</p>
         </div>
         <div className="socials flex gap-4 mt-3">

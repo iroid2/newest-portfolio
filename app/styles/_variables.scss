@@ -16,8 +16,11 @@ $primfontFam:'Overpass', sans-serif;
     
     font-weight: 600;
     line-height: 21px;
-    padding: 1rem;
+    padding: .3rem 0;
     color: rgb(255, 255, 255,0.85);
+    @media(max-width: 768px){
+      padding: .3rem;
+    }
   }
   .sectionDesc{
     color: rgb(255, 255, 255,0.55);

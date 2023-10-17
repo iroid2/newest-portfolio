@@ -24,7 +24,7 @@ export default function Sidenav() {
             </div>
           </div>
           </div>
-          <div className="right-topside md:flex-col sm:flex-row  gap-3">
+          <div className="right-topside md:flex-col p-0  sm:flex-row  gap-3">
             <HiMenuAlt1 className='text-2xl bg-red'/>
             <FiSun className='text-2xl'/>
           </div>
