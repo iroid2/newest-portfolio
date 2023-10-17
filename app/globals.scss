@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @import './styles/variables';
 
 $primContainerBgColor:#0A0F16;
@@ -105,7 +106,10 @@ body{
           @media(max-width: 768px){
           padding: .2rem;
           text-align: center;
-          font-size: .8rem;
+          border-bottom: none;
+          padding: .1rem .3rem;
+          border-left: .5px solid rgba(174, 173, 173, 0.57);
+          font-size: .5rem;
           }
         }
       }
@@ -179,6 +183,9 @@ body{
             left: 2.7rem;
             top: .1rem;
             background-color: #a33da56d;
+            @media(max-width: 768px){
+              left:auto;
+            }
           }
           img{
             z-index: 100;
@@ -202,9 +209,7 @@ body{
       }
       .socials{
         color: white;
-        @media(max-width: 768px){
-         
-        }
+        
       }
       .follows{
         display: flex;
