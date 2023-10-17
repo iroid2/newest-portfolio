@@ -10,7 +10,7 @@ export default function Profiletab() {
       </div>
       <div className="profile-details">
         <div className="prof-top">
-        <Image src={'/images/avatar2-5.png'} alt='' height={150} width={140}/>
+        <Image src={'/images/prof.jpg'} alt='' height={150} width={140}/>
         <div className="bg-rect"></div>
         </div>
         <div className="full-details" >
