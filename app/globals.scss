@@ -46,15 +46,20 @@ body{
         gap: 1rem;
       }
       .topSideBar{
+          padding: 01rem;
+        border-radius: 20px;
         width: 100%;
         background-color:$primContainerBgColor;
         color: white;
-        border-radius: 20px;
         height: 20%;
-        padding: .1rem 1rem;
+        // background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         @media(max-width: 768px){
-          // background-color: red;
-          padding: 0;
+          flex-direction: row;
+          justify-content: space-between;
         }
         .left-topside{
           // background-color: red;
@@ -82,7 +87,7 @@ body{
         }
       }
       .bottmSideBar{
-        padding: 01rem;
+        padding: 03rem 1rem;
         border-radius: 20px;
         width: 100%;
         background-color:$primContainerBgColor;
@@ -193,7 +198,6 @@ body{
             border: 4px solid $primBodyBgColor;
           }
         }
-        
         h1{
           font-size: 30px;
           font-family: $primfontFam;
@@ -218,10 +222,9 @@ body{
         height: 100px;
         border:.5px solid rgba(57, 55, 55, 0.338);
         border-bottom: .5px solid rgba(57, 55, 55, 0.338);
-        margin-top: .5rem;
         width: 100%;
         border-right-width:100% ;
-        margin-top: 2.5rem ;
+        margin-top: 1rem ;
        justify-content: center;
        padding: 0 1rem;
        @media(max-width: 768px){
@@ -256,10 +259,8 @@ body{
     .contentSection{
       margin-top: 1rem;
       border-radius: 1.2rem;
-      
       background-color: $primContainerBgColor;
       width: 51%;
-      // background-color: rosybrown;
       overflow: auto;
       @media(max-width: 768px){
         width: 100%;
