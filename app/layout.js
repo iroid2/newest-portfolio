@@ -1,3 +1,4 @@
+import Mouse from '@/components/Mouse'
 import './globals.scss'
 import { Inter } from 'next/font/google'
 
@@ -11,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html   lang="en">
-      <body className={'contentSection scrollbar-thin scrollbar-thumb-purple-500  scrollbar-track-slate-700' }>{children}</body>
+      <body>
+        <Mouse/>
+        {children}</body>
     </html>
   )
 }

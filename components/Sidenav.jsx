@@ -13,7 +13,7 @@ export default function Sidenav() {
         <div className="topSideBar flex justify-between">
           <div className="left-topside">
           <div className="profile flex md:hidden lg:hidden sm:block" >
-            <Image src={'/images/avatar2-5.png'} alt='' width={40} height={40}/>
+            <Image src={'/images/prof.jpg'} alt='' width={40} height={40}/>
             <div className="profile-details">
               <p className="name">
                 Welsely

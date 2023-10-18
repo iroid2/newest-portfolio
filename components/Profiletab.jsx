@@ -30,7 +30,6 @@ export default function Profiletab() {
           <h2 className='contactBtn'>CONTACT ME </h2>
       </div>
       </div>
-     
     </div>
   )
 }

@@ -15,7 +15,8 @@ $primPurp: #A33DA5;
 
 body{
   background-color: $primBodyBgColor;
-  padding: 2rem 1rem;
+  padding: 2rem .5rem;
+  overflow: hidden;
   @media(max-width: 768px){
     padding: 0rem;
   }
@@ -48,6 +49,8 @@ body{
         gap: 1rem;
         position: fixed;;
         left: 1rem;
+        right: 2rem;
+
       }
       .topSideBar{
           padding: 01rem;

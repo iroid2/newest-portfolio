@@ -26,3 +26,33 @@ $primfontFam:'Overpass', sans-serif;
     color: rgb(255, 255, 255,0.55);
     font-size: 16px;
   }
+  .cursor{
+    position: fixed;
+    background-color: #d142f5dc;;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    z-index: 999;
+    box-shadow: 0 0 20px #2696E8,0 0 60px #2696E8,0 0 100px#2696E8;
+    pointer-events: none;
+    animation: colors 5s infinite;
+  }
+  @keyframes colors{
+    0%{
+      filter: hue-rotate(0deg)
+    }
+    100%{
+      filter: hue-rotate(360deg)
+    }
+  }
+
+  .cursor:before{
+    content: '';
+    position: absolute;
+    background: #2696e8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%,-30%);
+    border-radius: 50%;
+  }
