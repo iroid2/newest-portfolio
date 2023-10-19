@@ -9,7 +9,7 @@ import { FiChevronRight } from 'react-icons/fi'
 import Image from 'next/image'
 export default function ContentSection({title}) {
   return (
-    <div className='contentSection scrollbar-thin scrollbar-thumb-purple-500  scrollbar-track-slate-700'>
+    <div className='contentSection scrollbar-radius-50 scrollbar-thin scrollbar-thumb-purple-500  scrollbar-track-slate-700'>
       <h1 className='content-title'><Sectiontitle title={'About Me'} /></h1>
       <div className="description">
        <Sectiondescription desc={'Hello! I’m Tukaheebwa Irad.'}/>

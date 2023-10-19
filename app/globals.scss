@@ -16,16 +16,19 @@ $primPurp: #A33DA5;
 body{
   background-color: $primBodyBgColor;
   padding: 2rem .5rem;
+  position: relative;
   overflow: hidden;
   @media(max-width: 768px){
-    padding: 0rem;
+    overflow: scroll;
+    padding: 0rem;  
+    
   }
   .homeContainer{
     // background-color: $primContainerBgColor;
     margin: 0 auto;
     display: flex;
     padding: 1rem;
-    gap: .8rem;
+    gap: .2rem;
     @media(max-width: 768px){
       flex-direction: column;
       margin: 0;
@@ -33,8 +36,9 @@ body{
       width: 100%;
       height: 100%;
     }
+    
     .sideBar{
-      width: 7%;
+      width: 6%;
       display: flex;
       flex-direction: column;
       height: 94%;
@@ -77,7 +81,7 @@ body{
               border-radius: 2rem;
             }
             .profile-details{
-              
+              background-color: $primContainerBgColor;
               .name{
                 font-size: .6rem;
               }
@@ -133,6 +137,7 @@ body{
       width: 43%;
       border: .5px solid rgba(57, 55, 55, 0.338);
       border-radius: 1.2rem;
+      background-color: #0A0F16;
       overflow: hidden;
       @media(max-width: 768px){
         width: 100%;
@@ -196,7 +201,7 @@ body{
             position: absolute;
             z-index: 5;
             border-radius: 3rem;
-            left: 2.7rem;
+            left: 3.2rem;
             top: .1rem;
             background-color: #a33da56d;
             @media(max-width: 768px){
@@ -250,6 +255,8 @@ body{
         height: fit-content;
        }
        .contactBtn{
+        font-size: 1.1rem;
+        font-family: $primfontFam;
         border-left: .5px solid rgba(57, 55, 55, 0.338);
         height: 100%;
         padding: 2rem;
@@ -257,21 +264,24 @@ body{
           font-size: .6rem;
           padding: 1rem .3rem;
         }
-       }
-       .followBtn{
+      }
+      .followBtn{
+         font-family: $primfontFam;
         padding: 1rem;
+        font-size: 1.3rem;
         @media(max-width: 768px){
           font-size: .6rem;
           padding-bottom: 3rem;
         }
-       }
       }
     }
-    .contentSection{
-      margin-top: 1rem;
-      border-radius: 1.2rem;
-      background-color: $primContainerBgColor;
-      width: 51%;
+  }
+  .contentSection{
+    
+    margin-top: 1rem;
+    border-radius: 1.2rem;
+    background-color: #0A0F16;
+    width: 51%;
       overflow: auto;
       @media(max-width: 768px){
         width: 100%;
@@ -280,7 +290,6 @@ body{
         padding: .4rem .3rem;
         margin-top: 0;
         overflow: visible;
-
       }
       .content-title{
         padding: 1rem 1.6rem;

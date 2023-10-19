@@ -40,7 +40,7 @@ export default function Sidenav() {
           </div>
           <div className="menu-detail">
             <LuView className='text-3xl align-center'/>
-            <p>Video</p>
+            <p>Works</p>
           </div>
           <div className="menu-detail">
             <TbListDetails className='text-3xl align-center'/>
@@ -50,7 +50,6 @@ export default function Sidenav() {
             <BiSolidUserBadge className='text-3xl align-center'/>
             <p>About</p>
           </div>
-         
         </div>
         </div>
   )
